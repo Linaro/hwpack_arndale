@@ -1,5 +1,5 @@
 [hwpack]
-name=linaro-panda
+name=linaro-lt-panda
 architectures=armel
 origin=Linaro
 maintainer=Linaro Platform <linaro-dev@lists.linaro.org>
@@ -8,7 +8,7 @@ packages=linux-image-linaro-lt-omap u-boot-linaro-omap4-panda x-loader-omap4-pan
 assume-installed=linaro-headless
 
 [ubuntu]
-sources-entry=http://ports.ubuntu.com/ubuntu-ports/ natty main universe
+sources-entry=http://ports.ubuntu.com/ubuntu-ports natty main universe
 
 [updates]
 sources-entry=http://ports.ubuntu.com/ubuntu-ports natty-updates main universe
