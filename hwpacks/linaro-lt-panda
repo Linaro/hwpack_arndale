@@ -4,7 +4,7 @@ architectures=armel
 origin=Linaro
 maintainer=Linaro Platform <linaro-dev@lists.linaro.org>
 support=supported
-packages=linux-image-linaro-lt-omap u-boot-linaro-omap4-panda x-loader-omap4-panda
+packages=linux-image-linaro-lt-omap u-boot-linaro-omap4-panda
 assume-installed=linaro-headless
 
 [ubuntu]
