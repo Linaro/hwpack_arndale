@@ -17,9 +17,11 @@ spl_in_boot_part=Yes
 kernel_addr=0x80200000
 initrd_addr=0x81600000
 load_addr=0x80008000
+dtb_addr=0x815f0000
 partition_layout=bootfs_rootfs
 kernel_file=boot/vmlinuz-*-linaro-lt-omap
 initrd_file=boot/initrd.img-*-linaro-lt-omap
+dtb_file=boot/dt-*-linaro-lt-omap/omap4-panda.dtb
 serial_tty=ttyO2
 extra_serial_options=console=tty0 console=ttyO2,115200n8
 extra_boot_options=earlyprintk fixrtc nocompcache vram=48M omapfb.vram=0:24M mem=456M@0x80000000 mem=512M@0xA0000000
