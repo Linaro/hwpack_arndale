@@ -1,0 +1,46 @@
+[hwpack]
+format=2.0
+name=linaro-lt-origen
+architectures=armel
+origin=Linaro
+maintainer=Linaro Platform <linaro-dev@lists.linaro.org>
+support=supported
+packages=linux-image-3.0.0-1000-origen linux-firmware
+assume-installed=linaro-headless
+mmc_id=0:2
+u_boot_package=u-boot-linaro-origen
+u_boot_file=usr/lib/u-boot/origen/u-boot.bin
+spl_file=usr/lib/u-boot/origen/origen-spl.bin
+u_boot_in_boot_part=No
+spl_in_boot_part=No
+kernel_addr=0x40007000
+initrd_addr=0x42000000
+load_addr=0x40008000
+#dtb_addr=0x41f00000
+partition_layout=reserved_bootfs_rootfs
+kernel_file=boot/vmlinuz-*-origen
+initrd_file=boot/initrd.img-*-origen
+#dtb_file=boot/dt-*-linaro-lt-origen/origen-panda.dtb
+serial_tty=ttySAC2
+extra_serial_options=console=ttySAC2,115200n8
+extra_boot_options=earlyprintk 
+boot_script=boot.scr
+samsung_bl1_start=1
+samsung_bl1_len=32
+samsung_env_len=32
+samsung_bl2_len=1024
+
+[ubuntu]
+sources-entry=http://ports.ubuntu.com/ubuntu-ports oneiric main universe
+
+[updates]
+sources-entry=http://ports.ubuntu.com/ubuntu-ports oneiric-updates main universe
+
+[security]
+sources-entry=http://ports.ubuntu.com/ubuntu-ports oneiric-security main universe
+
+[linaro-samsung]
+sources-entry=http://ppa.launchpad.net/linaro-landing-team-samsung/linaro-samsung/ubuntu oneiric main
+
+[linaro]
+sources-entry=http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu oneiric main
