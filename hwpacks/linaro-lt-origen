@@ -10,6 +10,7 @@ assume-installed=linaro-headless
 mmc_id=0:2
 u_boot_package=u-boot-linaro-origen
 u_boot_file=usr/lib/u-boot/origen/u-boot.bin
+spl_package=u-boot-linaro-origen
 spl_file=usr/lib/u-boot/origen/origen-spl.bin
 u_boot_in_boot_part=No
 spl_in_boot_part=No
