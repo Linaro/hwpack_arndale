@@ -8,6 +8,7 @@ support=supported
 packages=linux-image-3.0.0-1000-origen linux-firmware
 assume-installed=linaro-headless
 mmc_id=0:2
+mmc_part_offset=1
 u_boot_package=u-boot-linaro-origen
 u_boot_file=usr/lib/u-boot/origen/u-boot.bin
 spl_package=u-boot-linaro-origen
@@ -30,6 +31,8 @@ samsung_bl1_start=1
 samsung_bl1_len=32
 samsung_env_len=32
 samsung_bl2_len=1024
+u_boot_dd=65
+spl_dd=1
 
 [ubuntu]
 sources-entry=http://ports.ubuntu.com/ubuntu-ports oneiric main universe
