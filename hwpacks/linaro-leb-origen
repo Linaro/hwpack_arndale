@@ -1,6 +1,6 @@
 [hwpack]
 format=2.0
-name=linaro-lt-origen
+name=linaro-leb-origen
 architectures=armel
 origin=Linaro
 maintainer=Linaro Platform <linaro-dev@lists.linaro.org>
