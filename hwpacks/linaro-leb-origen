@@ -25,7 +25,7 @@ initrd_file=boot/initrd.img-*-origen
 #dtb_file=boot/dt-*-linaro-lt-origen/origen-panda.dtb
 serial_tty=ttySAC2
 extra_serial_options=console=ttySAC2,115200n8
-extra_boot_options=earlyprintk
+#extra_boot_options=earlyprintk
 boot_script=boot.scr
 samsung_bl1_start=1
 samsung_bl1_len=32
