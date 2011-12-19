@@ -5,7 +5,7 @@ architectures=armel
 origin=Linaro
 maintainer=Linaro Platform <linaro-dev@lists.linaro.org>
 support=supported
-packages=linux-image-linaro-lt-origen origen-bluetooth
+packages=linux-image-linaro-lt-origen ubuntu-origen-extras
 assume-installed=linaro-headless
 mmc_id=0:2
 mmc_part_offset=1
@@ -22,7 +22,7 @@ load_addr=0x40008000
 partition_layout=reserved_bootfs_rootfs
 kernel_file=boot/vmlinuz-*-origen
 initrd_file=boot/initrd.img-*-origen
-#dtb_file=boot/dt-*-linaro-lt-origen/origen-panda.dtb
+#dtb_file=boot/dt-*-linaro-lt-origen/origen.dtb
 serial_tty=ttySAC2
 extra_serial_options=console=ttySAC2,115200n8
 #extra_boot_options=earlyprintk
@@ -33,6 +33,7 @@ samsung_env_len=32
 samsung_bl2_len=1024
 u_boot_dd=65
 spl_dd=1
+env_dd=yes
 
 [ubuntu]
 sources-entry=http://ports.ubuntu.com/ubuntu-ports oneiric main universe
