@@ -44,8 +44,5 @@ sources-entry=http://ports.ubuntu.com/ubuntu-ports precise-updates main universe
 [security]
 sources-entry=http://ports.ubuntu.com/ubuntu-ports precise-security main universe
 
-[linaro-samsung]
-sources-entry=http://ppa.launchpad.net/linaro-landing-team-samsung/linaro-samsung/ubuntu precise main
-
 [linaro]
 sources-entry=http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu precise main
