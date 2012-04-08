@@ -1,7 +1,7 @@
 [hwpack]
 format=2.0
 name=linaro-leb-origen
-architectures=armel
+architectures=armhf
 origin=Linaro
 maintainer=Linaro Platform <linaro-dev@lists.linaro.org>
 support=supported
@@ -36,16 +36,16 @@ spl_dd=1
 env_dd=yes
 
 [ubuntu]
-sources-entry=http://ports.ubuntu.com/ubuntu-ports oneiric main universe
+sources-entry=http://ports.ubuntu.com/ubuntu-ports precise main universe
 
 [updates]
-sources-entry=http://ports.ubuntu.com/ubuntu-ports oneiric-updates main universe
+sources-entry=http://ports.ubuntu.com/ubuntu-ports precise-updates main universe
 
 [security]
-sources-entry=http://ports.ubuntu.com/ubuntu-ports oneiric-security main universe
+sources-entry=http://ports.ubuntu.com/ubuntu-ports precise-security main universe
 
 [linaro-samsung]
-sources-entry=http://ppa.launchpad.net/linaro-landing-team-samsung/linaro-samsung/ubuntu oneiric main
+sources-entry=http://ppa.launchpad.net/linaro-landing-team-samsung/linaro-samsung/ubuntu precise main
 
 [linaro]
-sources-entry=http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu oneiric main
+sources-entry=http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu precise main
