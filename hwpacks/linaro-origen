@@ -1,11 +1,11 @@
 [hwpack]
 format=2.0
-name=linaro-leb-origen
+name=linaro-origen
 architectures=armhf
 origin=Linaro
 maintainer=Linaro Platform <linaro-dev@lists.linaro.org>
 support=supported
-packages=linux-image-linaro-lt-origen ubuntu-origen-extras uboot-mkimage
+packages=linux-image-linaro-exynos linux-headers-linaro-exynos ubuntu-origen-extras uboot-mkimage
 assume-installed=linaro-headless bluez
 mmc_id=0:2
 mmc_part_offset=1
@@ -18,11 +18,11 @@ spl_in_boot_part=No
 kernel_addr=0x40007000
 initrd_addr=0x42000000
 load_addr=0x40008000
-#dtb_addr=0x41f00000
+dtb_addr=0x41f00000
 partition_layout=reserved_bootfs_rootfs
-kernel_file=boot/vmlinuz-*-origen
-initrd_file=boot/initrd.img-*-origen
-#dtb_file=boot/dt-*-linaro-lt-origen/origen.dtb
+kernel_file=boot/vmlinuz-*-exynos
+initrd_file=boot/initrd.img-*-exynos
+dtb_file=boot/dt-*-linaro-exynos/exynos4210-origen.dtb
 serial_tty=ttySAC2
 extra_serial_options=console=ttySAC2,115200n8
 #extra_boot_options=earlyprintk
