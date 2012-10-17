@@ -1,48 +1,49 @@
-[hwpack]
-format=2.0
-name=linaro-origen
-architectures=armhf
-origin=Linaro
-maintainer=Linaro Platform <linaro-dev@lists.linaro.org>
-support=supported
-packages=linux-image-linaro-origen linux-headers-linaro-origen ubuntu-origen-extras uboot-mkimage
-assume-installed=linaro-headless bluez
-mmc_id=0:2
-mmc_part_offset=1
-u_boot_package=u-boot-linaro-origen
-u_boot_file=usr/lib/u-boot/origen/u-boot.bin
-spl_package=u-boot-linaro-origen
-spl_file=usr/lib/u-boot/origen/origen-spl.bin
-u_boot_in_boot_part=No
-spl_in_boot_part=No
-kernel_addr=0x40007000
-initrd_addr=0x42000000
-load_addr=0x40008000
-#dtb_addr=0x41f00000
-partition_layout=reserved_bootfs_rootfs
-kernel_file=boot/vmlinuz-*-origen
-initrd_file=boot/initrd.img-*-origen
-#dtb_file=boot/dt-*-linaro-origen/origen.dtb
-serial_tty=ttySAC2
-extra_serial_options=console=tty0 console=ttySAC2,115200n8
-#extra_boot_options=earlyprintk
-boot_script=boot.scr
-samsung_bl1_start=1
-samsung_bl1_len=32
-samsung_env_len=32
-samsung_bl2_len=1024
-u_boot_dd=65
-spl_dd=1
-env_dd=yes
-
-[ubuntu]
-sources-entry=http://ports.ubuntu.com/ubuntu-ports precise main universe
-
-[updates]
-sources-entry=http://ports.ubuntu.com/ubuntu-ports precise-updates main universe
-
-[security]
-sources-entry=http://ports.ubuntu.com/ubuntu-ports precise-security main universe
-
-[linaro]
-sources-entry=http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu precise main
+name: linaro-origen
+origin: Linaro
+format: '3.0'
+boot_script: boot.scr
+kernel_addr: '0x40007000'
+kernel_file: boot/vmlinuz-*-origen
+initrd_addr: '0x42000000'
+initrd_file: boot/initrd.img-*-origen
+dtb_addr: '0x41f00000'
+dtb_file: lib/firmware/*-origen/device-tree/exynos4210-origen.dtb
+load_addr: '0x40008000'
+maintainer: Linaro Platform <linaro-dev@lists.linaro.org>
+serial_tty: ttySAC2
+support: supported
+partition_layout: reserved_bootfs_rootfs
+mmc_id: 0:2
+samsung_bl1_start: 1
+samsung_bl1_len: 32
+samsung_env_len: 32
+samsung_bl2_len: 1024
+architectures:
+- armhf
+assume_installed:
+- linaro-headless
+- bluez
+extra_serial_options:
+- console=tty0
+- console=ttySAC2,115200n8
+packages:
+- linux-image-linaro-origen
+- linux-headers-linaro-origen
+- ubuntu-origen-extras
+- uboot-mkimage
+sources:
+  linaro: http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu precise main
+  security: http://ports.ubuntu.com/ubuntu-ports precise-security main universe
+  ubuntu: http://ports.ubuntu.com/ubuntu-ports precise main universe
+  updates: http://ports.ubuntu.com/ubuntu-ports precise-updates main universe
+bootloaders:
+  u_boot:
+    package: u-boot-linaro-origen
+    file: usr/lib/u-boot/origen/u-boot.bin
+    in_boot_part: false
+    dd: 65
+    env_dd: true
+    spl_package: u-boot-linaro-origen
+    spl_file: usr/lib/u-boot/origen/origen-spl.bin
+    spl_in_boot_part: false
+    spl_dd: 1
