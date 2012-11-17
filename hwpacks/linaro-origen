@@ -33,9 +33,7 @@ packages:
 - uboot-mkimage
 sources:
   linaro: http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu precise main
-  security: http://ports.ubuntu.com/ubuntu-ports precise-security main universe
   ubuntu: http://ports.ubuntu.com/ubuntu-ports precise main universe
-  updates: http://ports.ubuntu.com/ubuntu-ports precise-updates main universe
 bootloaders:
   u_boot:
     package: u-boot-linaro-origen
