@@ -32,8 +32,8 @@ packages:
 - ubuntu-origen-extras
 - uboot-mkimage
 sources:
-  linaro: http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu precise main
-  ubuntu: http://ports.ubuntu.com/ubuntu-ports precise main universe
+  linaro: http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu quantal main
+  ubuntu: http://ports.ubuntu.com/ubuntu-ports quantal main universe
 bootloaders:
   u_boot:
     package: u-boot-linaro-origen
