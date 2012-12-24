@@ -43,4 +43,3 @@ packages:
 sources:
   linaro: http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu quantal main
   ubuntu: http://ports.ubuntu.com/ubuntu-ports quantal main universe
-  local: http://localhost/~fboudra/quantal quantal main
