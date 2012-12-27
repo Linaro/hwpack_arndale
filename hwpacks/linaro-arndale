@@ -40,6 +40,8 @@ packages:
 - linux-image-linaro-arndale
 - linux-headers-linaro-arndale
 - uboot-mkimage
+wired_interfaces:
+- eth0
 sources:
   linaro: http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu quantal main
   ubuntu: http://ports.ubuntu.com/ubuntu-ports quantal main universe
