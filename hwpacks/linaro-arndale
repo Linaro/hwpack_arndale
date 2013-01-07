@@ -39,6 +39,7 @@ assume_installed:
 packages:
 - linux-image-linaro-arndale
 - linux-headers-linaro-arndale
+- arndale-pre-boot
 - uboot-mkimage
 wired_interfaces:
 - eth0
