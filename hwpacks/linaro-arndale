@@ -32,7 +32,9 @@ extra_serial_options:
 - console=ttySAC2,115200n8
 samsung_bl1_start: 17
 samsung_bl1_len: 32
+samsung_bl2_start: 49
 samsung_bl2_len: 1024
+samsung_env_start: 1073
 samsung_env_len: 32
 assume_installed:
 - linaro-headless
