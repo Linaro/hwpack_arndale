@@ -16,6 +16,10 @@ bootloaders:
     spl_file: usr/lib/u-boot/arndale5250/smdk5250-spl.bin
     spl_in_boot_part: false
     spl_package: u-boot-linaro-arndale5250
+  uefi:
+    package: uefi-image-arndale
+    file; usr/lib/uefi/arndale/uefi_arndale.bin
+    in_boot_part: true
 serial_tty: ttySAC2
 kernel_addr: '0x40007000'
 initrd_addr: '0x42000000'
