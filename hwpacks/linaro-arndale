@@ -46,6 +46,7 @@ packages:
 - linux-image-linaro-arndale
 - linux-headers-linaro-arndale
 - arndale-pre-boot
+- arndale-ethernet
 - uboot-mkimage
 wired_interfaces:
 - eth0
