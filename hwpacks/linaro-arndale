@@ -39,6 +39,7 @@ boot_script: boot.scr
 extra_serial_options:
 - console=tty0
 - console=ttySAC2,115200n8
+- drm_kms_helper.edid_firmware=edid-1920x1080.fw
 samsung_bl1_start: 17
 samsung_bl1_len: 32
 samsung_bl2_start: 49
