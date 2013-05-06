@@ -57,5 +57,5 @@ packages:
 wired_interfaces:
 - eth0
 sources:
-  linaro: http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu quantal main
-  ubuntu: http://ports.ubuntu.com/ubuntu-ports quantal main universe
+  linaro: http://ppa.launchpad.net/linaro-maintainers/overlay/ubuntu raring main
+  ubuntu: http://ports.ubuntu.com/ubuntu-ports raring main universe
