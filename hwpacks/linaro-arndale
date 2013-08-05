@@ -49,8 +49,8 @@ samsung_env_len: 32
 assume_installed:
 - linaro-headless
 packages:
-- linux-image-3.10.1.0-1-linaro-arndale
-- linux-headers-3.10.1.0-1-linaro-arndale
+- linux-image-linaro-arndale
+- linux-headers-linaro-arndale
 - arndale-pre-boot
 - uboot-mkimage
 wired_interfaces:
