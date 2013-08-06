@@ -31,7 +31,7 @@ initrd_addr: '0x42000000'
 load_addr: '0x40008000'
 dtb_addr: '0x41f00000'
 partition_layout: reserved_bootfs_rootfs
-mmc_id: '0:2'
+mmc_id: '1:2'
 kernel_file: boot/vmlinuz-*-arndale
 initrd_file: boot/initrd.img-*-arndale
 dtb_file: lib/firmware/*-arndale/device-tree/exynos5250-arndale.dtb
